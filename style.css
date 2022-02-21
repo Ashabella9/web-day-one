@@ -1,97 +1,68 @@
-*{
-  margin: 0;
+* {
   padding: 0;
+  margin: 0;
 }
-
-nav{
-  display: flex;
-  align-items: center;
-  background: #121212;
+body {
+  background-color: #121212;
   color: #fff;
-  height: 75px;
 }
-ul{
+nav {
+  background-color: #46a3dc;
+}
+ul {
   display: flex;
-  list-style: none;
+  list-style-type: none;
 }
-li{
-  margin-left: 10px;
+li {
+  padding: 20px;
+}
+h1 {
+  color: aqua;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
-header{
+h2 {
+  margin-top: 15px;
+  margin-left: 15px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
-
-header img{
-  width: 30vw;
+p {
+  margin-left: 15px;
+  display: flex;
+}
+img {
+  width: 300px;
 }
 
-#about__me {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "about__me__heading about__me__img about__me__img"
-    "about__me__paragraph about__me__img about__me__img";
-  align-items: center;
-  margin-top: 10em;
+.about-me {
+  display: flex;
+  justify-content: space-evenly;
 }
-#about__me h2 {
-  font-size: 65px;
-  grid-area: about__me__heading;
-  /* margin-bottom: 1em; */
-}
-
-#about__me p {
-  font-size: 20px;
-  grid-area: about__me__paragraph;
-  color: #808080;
-}
-
-#about__me img {
-  height: 55vh;
-  grid-area: about__me__img;
-  justify-self: center;
-  align-self: center;
-}
-
-#about__me a {
-  color: #36a4dc;
-  text-decoration: none;
+.about-me-text {
+  width: 500px;
 }
 
 /*  Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  nav{
+    body{
+        background-color: #fff;
+        color: #000;
+    }
+  ul {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  #about__me{
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "about__me__heading"
-      "about__me__img"
-      "about__me__paragraph";
-    margin-top: 3em;
-
+  h1 {
+    color: red;
   }
-  
-  #about__me h2 {
-    font-size: 26px;
+  .about-me{
+      flex-direction: column;
+      align-items: center;
   }
-
-  #about__me p {
-    font-size: 16px;
-  }
-
-  #about__me img {
-    height: 28vh;
-    margin-top: 1.5em;
-    margin-bottom: 2em;
+  .about-me-text{
+      width: 100%;
   }
 }
-
-
-
